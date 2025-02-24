@@ -1,0 +1,103 @@
+/* Q Company Branding Colors */
+:root {
+  --primary-color: #FF0000;
+  --primary-hover: #cc0000;
+  --background-light: #ffffff;
+  --text-color: #333333;
+  --border-color: #e0e0e0;
+}
+
+/* Global Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header Styling */
+.cl-header {
+  background-color: var(--background-light) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+/* Message Bubbles */
+.cl-message-bubble {
+  background-color: var(--background-light) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+/* Buttons */
+.cl-button {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-radius: 4px !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.cl-button:hover {
+  background-color: var(--primary-hover) !important;
+}
+
+/* Input Box */
+.cl-input-box {
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+}
+
+/* Links */
+.cl-link {
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+}
+
+.cl-link:hover {
+  text-decoration: underline !important;
+}
+
+/* Chat Interface */
+.cl-chat-container {
+  background-color: var(--background-light) !important;
+}
+
+/* Message Actions */
+.cl-message-actions button {
+  color: var(--primary-color) !important;
+}
+
+/* Watermark */
+.watermark {
+  visibility: hidden !important;
+  position: relative !important;
+}
+
+.watermark::after {
+  content: "Qcompany" !important;
+  visibility: visible !important;
+  color: var(--primary-color) !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  position: absolute !important;
+  text-align: center !important;
+  width: 100% !important;
+  top: 5px !important;
+}
+
+/* Progress Indicators */
+.cl-progress-bar {
+  background-color: var(--primary-color) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color) !important;
+  border-radius: 4px !important;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.inline-flex.items-center.justify-center.gap-2.whitespace-nowrap.rounded-md.text-sm.font-medium.ring-offset-background.transition-colors.focus-visible\:outline-none.focus-visible\:ring-2.focus-visible\:ring-ring.focus-visible\:ring-offset-2.disabled\:pointer-events-none.disabled\:opacity-50.\[\&\_svg\]\:pointer-events-none.\[\&\_svg\]\:size-4.\[\&\_svg\]\:shrink-0.hover\:bg-accent.hover\:text-accent-foreground.h-10.px-4.py-2 {
+    display: none !important;
+}
