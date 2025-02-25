@@ -170,13 +170,13 @@ async def process_files(files: List[Element]):
 async def set_starters():
     return [
         cl.Starter(
-            label="Run Tesla stock analysis",
-            message="Make a data analysis on the tesla-stock-price.csv file I previously uploaded.",
+            label="Maak een managementverslag van deze XER",
+            message="Maak een managementverslag van deze XER.",
             icon="/public/write.svg",
             ),
         cl.Starter(
-            label="Run a data analysis on my CSV",
-            message="Make a data analysis on the next CSV file I will upload.",
+            label="Schrijf een rapportage over de risico's van deze XER",
+            message="Schrijf een rapportage over de risico's van deze XER.",
             icon="/public/write.svg",
             )
         ]
