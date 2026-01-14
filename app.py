@@ -21,15 +21,8 @@ assistant = sync_openai_client.beta.assistants.retrieve(
     os.environ.get("OPENAI_ASSISTANT_ID")
 )
 
-config.project.name = assistant.name
 config.ui.name = assistant.name
-config.ui.hide_cot = True
-config.ui.hide_prompt_box = False
-config.ui.show_restart_button = True
-config.ui.disable_header = True
-config.ui.remove_branding = True
-config.ui.show_footer = False
-config.code.hide_copy_button = True  # Hide copy button that has chainlit branding
+config.ui.cot = "hidden"
 
 
 class EventHandler(AsyncAssistantEventHandler):
